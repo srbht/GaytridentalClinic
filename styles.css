@@ -435,17 +435,6 @@ p {
     background: var(--gradient-hero);
 }
 
-.hero-bg-photo {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 65% 35%;
-    z-index: 0;
-    opacity: 0.55;
-}
-
 .hero-background::before {
     content: '';
     position: absolute;
@@ -471,7 +460,7 @@ p {
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(105deg, rgba(5, 12, 20, 0.82) 0%, rgba(5, 12, 20, 0.35) 48%, rgba(5, 12, 20, 0.55) 100%);
+    background: linear-gradient(105deg, rgba(5, 12, 20, 0.72) 0%, rgba(5, 12, 20, 0.28) 48%, rgba(5, 12, 20, 0.48) 100%);
     z-index: 2;
     pointer-events: none;
 }
@@ -605,28 +594,13 @@ p {
     overflow: hidden;
     box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
     border: 1px solid rgba(255, 255, 255, 0.15);
-}
-
-.showcase-bg-photo {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center 30%;
-    opacity: 0.5;
-    z-index: 0;
-}
-
-.showcase-board .showcase-ring,
-.showcase-board .showcase-hub,
-.showcase-board .showcase-float {
-    z-index: 1;
+    background: linear-gradient(155deg, rgba(255, 255, 255, 0.1) 0%, rgba(15, 42, 61, 0.55) 50%, rgba(255, 92, 77, 0.12) 100%);
 }
 
 .showcase-ring {
     position: absolute;
     inset: 8%;
+    z-index: 0;
     border: 2px dashed rgba(255, 255, 255, 0.2);
     border-radius: 28px;
     transform: rotate(-3deg);
@@ -637,6 +611,7 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 1;
     width: 120px;
     height: 120px;
     border-radius: 28px;
@@ -653,6 +628,7 @@ p {
 
 .showcase-float {
     position: absolute;
+    z-index: 1;
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -827,89 +803,6 @@ p {
     }
 }
 
-/* Clinical photo gallery */
-.care-gallery {
-    padding: var(--section-pad) 0;
-    background: #fff;
-    border-top: 1px solid var(--border-color);
-    border-bottom: 1px solid var(--border-color);
-}
-
-.care-gallery-title {
-    font-size: clamp(1.35rem, 3vw, 1.85rem);
-    margin: 0 0 0.5rem;
-    letter-spacing: -0.03em;
-}
-
-.care-gallery-sub {
-    margin: 0 0 var(--spacing-lg);
-    color: var(--text-secondary);
-    font-size: 0.95rem;
-    max-width: 40rem;
-    line-height: 1.6;
-}
-
-.care-gallery-grid {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    grid-template-rows: auto auto;
-    gap: 0.75rem;
-}
-
-.care-gallery-item {
-    position: relative;
-    margin: 0;
-    border-radius: 14px;
-    overflow: hidden;
-    box-shadow: var(--shadow-md);
-    border: 1px solid var(--border-color);
-    background: #0a1628;
-}
-
-.care-gallery-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.5s ease;
-    min-height: 200px;
-}
-
-.care-gallery-item:hover img {
-    transform: scale(1.04);
-}
-
-.care-gallery-item figcaption {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 0.65rem 0.85rem;
-    background: linear-gradient(transparent, rgba(5, 12, 20, 0.92));
-    color: #fff;
-    font-size: 0.78rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-}
-
-.care-gallery-item--tall {
-    grid-row: span 2;
-}
-
-.care-gallery-item--tall img {
-    min-height: 100%;
-}
-
-.care-gallery-item--wide {
-    grid-column: span 2;
-}
-
-.care-gallery-item--wide img {
-    min-height: 220px;
-    max-height: 280px;
-}
-
 /* ===========================
    About Section
    =========================== */
@@ -951,34 +844,27 @@ p {
     transition: transform var(--transition-slow), box-shadow var(--transition-base);
 }
 
-.about-visual-inner--photo {
-    padding: 0;
-    min-height: 320px;
-    border: none;
-}
-
-.about-photo {
-    width: 100%;
-    height: 100%;
-    min-height: 320px;
-    object-fit: cover;
-    object-position: center 25%;
-    display: block;
-}
-
-.about-photo-scrim {
+.about-visual-glow {
     position: absolute;
-    inset: 0;
-    background: linear-gradient(180deg, transparent 40%, rgba(5, 12, 20, 0.75) 100%);
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(30, 90, 122, 0.2) 0%, transparent 70%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
     pointer-events: none;
 }
 
-.about-visual-inner--photo .about-visual-badges {
-    position: absolute;
-    bottom: var(--spacing-md);
-    left: var(--spacing-md);
-    right: var(--spacing-md);
-    justify-content: flex-start;
+.about-visual-icon {
+    position: relative;
+    font-size: 5rem;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 8px 24px rgba(25, 100, 120, 0.2));
+    margin-bottom: var(--spacing-lg);
 }
 
 .about-visual:hover .about-visual-inner {
@@ -1123,24 +1009,6 @@ p {
     padding: var(--spacing-lg);
     background: linear-gradient(160deg, rgba(255, 255, 255, 0.1) 0%, rgba(10, 25, 40, 0.6) 100%);
     border-color: rgba(255, 255, 255, 0.15);
-}
-
-.services-bento .service-card--featured::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-    border-radius: inherit;
-    background-image: url('https://images.unsplash.com/photo-1629909615184-28faa17ce6b0?auto=format&fit=crop&w=900&q=80');
-    background-size: cover;
-    background-position: center 20%;
-    opacity: 0.2;
-    pointer-events: none;
-}
-
-.services-bento .service-card--featured > * {
-    position: relative;
-    z-index: 1;
 }
 
 .services-bento .service-card--featured h3 {
@@ -1308,47 +1176,6 @@ p {
     padding: var(--section-pad) 0;
     background: var(--bg-secondary);
     border-top: 1px solid var(--border-color);
-}
-
-.doctors-hero-photo {
-    position: relative;
-    border-radius: 16px;
-    overflow: hidden;
-    margin-bottom: var(--spacing-lg);
-    box-shadow: var(--shadow-lg);
-    border: 1px solid var(--border-color);
-}
-
-.doctors-hero-photo img {
-    width: 100%;
-    height: auto;
-    min-height: 200px;
-    max-height: 320px;
-    object-fit: cover;
-    object-position: center 40%;
-    display: block;
-}
-
-.doctors-hero-photo__caption {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    gap: 0.65rem;
-    padding: 0.85rem 1.1rem;
-    background: linear-gradient(transparent, rgba(5, 12, 20, 0.88));
-    color: #fff;
-    font-size: 0.88rem;
-    font-weight: 700;
-    line-height: 1.35;
-}
-
-.doctors-hero-photo__caption i {
-    color: #ff8a7a;
-    font-size: 1.1rem;
-    flex-shrink: 0;
 }
 
 .doctors-grid {
@@ -2104,23 +1931,6 @@ p {
 
     .about-content {
         grid-template-columns: 1fr;
-    }
-
-    .care-gallery-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .care-gallery-item--tall {
-        grid-row: auto;
-    }
-
-    .care-gallery-item--wide {
-        grid-column: auto;
-    }
-
-    .care-gallery-item--wide img {
-        max-height: none;
-        min-height: 200px;
     }
 
     .nav-links {
