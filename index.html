@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaytri Dental Hospital & Face Trauma Center - Expert Dental Care</title>
+    <meta name="description"
+        content="Gaytri Dental Hospital & Face Trauma Center provides expert dental care, oral surgery, and face trauma treatment. Book an appointment with Dr. Manish Shukla and Dr. Pratibha Shukla today.">
+
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Syne:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <div class="logo-mark" aria-hidden="true">
+                        <i class="fas fa-tooth"></i>
+                    </div>
+                    <div class="logo-text">
+                        <div class="logo-line1">Gaytri Dental Hospital</div>
+                        <div class="logo-ampersand">&</div>
+                        <div class="logo-line2">&nbsp;&nbsp;&nbsp;Face Trauma Center</div>
+                    </div>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#doctors" class="nav-link">Our Doctors</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="btn btn-primary" onclick="scrollToAppointment()">
+                    <i class="fas fa-calendar-check"></i> Book Appointment
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <img class="hero-bg-photo"
+                src="https://images.unsplash.com/photo-1588776814546-1ffcf47287a5?auto=format&fit=crop&w=1920&q=80"
+                alt="" width="1920" height="1080" fetchpriority="high" decoding="async" aria-hidden="true">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-angle" aria-hidden="true"></div>
+        <div class="hero-main">
+            <div class="container hero-split">
+                <div class="hero-copy">
+                    <div class="hero-badge">
+                        <span class="hero-badge-dot"></span>
+                        <span>Gaytri Dental · Face Trauma Center</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Dentistry &amp; facial trauma care—<em>one trusted hospital.</em>
+                    </h1>
+                    <p class="hero-lead">
+                        From routine smiles to complex jaw surgery and emergency facial injury—specialists,
+                        modern equipment, and a team that fills every step with clarity and calm.
+                    </p>
+                    <div class="hero-actions">
+                        <button class="btn btn-primary btn-lg" onclick="scrollToAppointment()">
+                            <i class="fas fa-calendar-plus"></i> Book a visit
+                        </button>
+                        <button class="btn btn-secondary btn-lg" onclick="scrollToServices()">
+                            <i class="fas fa-th-large"></i> Browse treatments
+                        </button>
+                    </div>
+                    <ul class="hero-checklist">
+                        <li><i class="fas fa-check"></i> Same-week slots</li>
+                        <li><i class="fas fa-check"></i> Sterile protocols</li>
+                        <li><i class="fas fa-check"></i> Trauma-ready team</li>
+                    </ul>
+                </div>
+                <aside class="hero-showcase" aria-hidden="true">
+                    <div class="showcase-board">
+                        <img class="showcase-bg-photo"
+                            src="https://images.unsplash.com/photo-1606811971618-4486bf521713?auto=format&fit=crop&w=900&q=80"
+                            alt="" width="600" height="700" loading="lazy" decoding="async">
+                        <div class="showcase-ring"></div>
+                        <div class="showcase-hub">
+                            <i class="fas fa-tooth"></i>
+                        </div>
+                        <div class="showcase-float showcase-float--a">
+                            <i class="fas fa-bolt"></i>
+                            <span>Emergency desk</span>
+                        </div>
+                        <div class="showcase-float showcase-float--b">
+                            <strong>15+</strong>
+                            <span>yrs combined</span>
+                        </div>
+                        <div class="showcase-float showcase-float--c">
+                            <i class="fas fa-x-ray"></i>
+                            <span>Digital X-ray</span>
+                        </div>
+                        <div class="showcase-float showcase-float--d">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>ISO-style hygiene</span>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+        <div class="hero-stats-bar">
+            <div class="container stats-bar">
+                <div class="stat-block">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Years experience</div>
+                </div>
+                <div class="stat-block">
+                    <div class="stat-number">5000+</div>
+                    <div class="stat-label">Patients treated</div>
+                </div>
+                <div class="stat-block">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Commitment to care</div>
+                </div>
+                <div class="stat-divider-bar"></div>
+                <div class="stat-extras">
+                    <span><i class="fas fa-clock"></i> Mon–Sat 9–8</span>
+                    <span><i class="fas fa-phone-volume"></i> Emergency line</span>
+                    <span><i class="fas fa-parking"></i> Parking on site</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="marquee-strip" aria-hidden="true">
+        <div class="marquee-track">
+            <span>General &amp; cosmetic dentistry</span>
+            <span>·</span>
+            <span>Oral &amp; maxillofacial surgery</span>
+            <span>·</span>
+            <span>Face trauma &amp; injury care</span>
+            <span>·</span>
+            <span>Pediatric &amp; orthodontic support</span>
+            <span>·</span>
+            <span>Root canal &amp; implants</span>
+            <span>·</span>
+            <span>General &amp; cosmetic dentistry</span>
+            <span>·</span>
+            <span>Oral &amp; maxillofacial surgery</span>
+            <span>·</span>
+            <span>Face trauma &amp; injury care</span>
+            <span>·</span>
+            <span>Pediatric &amp; orthodontic support</span>
+            <span>·</span>
+            <span>Root canal &amp; implants</span>
+            <span>·</span>
+        </div>
+    </div>
+
+    <!-- Clinical imagery (stock photos — illustrative of services, not specific staff) -->
+    <section class="care-gallery" aria-labelledby="care-gallery-heading">
+        <div class="container">
+            <h2 id="care-gallery-heading" class="care-gallery-title">Care you can picture</h2>
+            <p class="care-gallery-sub">Representative images of dental treatment, surgery, and hospital-grade hygiene—similar to what we offer at Gaytri Dental.</p>
+            <div class="care-gallery-grid">
+                <figure class="care-gallery-item care-gallery-item--tall">
+                    <img src="https://images.unsplash.com/photo-1551190822-a9333d879774?auto=format&fit=crop&w=800&q=80"
+                        alt="Medical team performing a procedure in a sterile operating environment (stock photo)"
+                        width="600" height="800" loading="lazy" decoding="async">
+                    <figcaption>Surgical &amp; trauma-ready setting</figcaption>
+                </figure>
+                <figure class="care-gallery-item">
+                    <img src="https://images.unsplash.com/photo-1629909615184-28faa17ce6b0?auto=format&fit=crop&w=800&q=80"
+                        alt="Dental professional at work with patient in a modern clinic (stock photo)" width="600"
+                        height="450" loading="lazy" decoding="async">
+                    <figcaption>Chairside dentistry</figcaption>
+                </figure>
+                <figure class="care-gallery-item">
+                    <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800&q=80"
+                        alt="Doctor reviewing care in a clinical environment (stock photo)" width="600" height="450"
+                        loading="lazy" decoding="async">
+                    <figcaption>Consultation &amp; planning</figcaption>
+                </figure>
+                <figure class="care-gallery-item care-gallery-item--wide">
+                    <img src="https://images.unsplash.com/photo-1584036561562-baf8f0f1b144?auto=format&fit=crop&w=1200&q=80"
+                        alt="Medical professional in protective equipment in a clinical setting (stock photo)"
+                        width="1200" height="500" loading="lazy" decoding="async">
+                    <figcaption>Sterile protocols &amp; protective care</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container about-wrap">
+            <header class="section-head-inline">
+                <span class="section-badge">About us</span>
+                <h2 class="section-title">Welcome to Gaytri Dental Hospital</h2>
+                <p class="section-lead">Dental excellence and face-trauma expertise in one place—less running around, more healing.</p>
+            </header>
+            <div class="about-content">
+                <div class="about-visual">
+                    <div class="about-visual-inner about-visual-inner--photo">
+                        <img class="about-photo"
+                            src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=900&q=80"
+                            alt="Dentist examining a patient in a treatment room (stock photo for illustration)"
+                            width="700" height="900" loading="lazy" decoding="async">
+                        <div class="about-photo-scrim"></div>
+                        <div class="about-visual-badges">
+                            <span class="about-pill"><i class="fas fa-certificate"></i> Certified care</span>
+                            <span class="about-pill"><i class="fas fa-shield-virus"></i> Sterile &amp; safe</span>
+                        </div>
+                    </div>
+                    <div class="image-decoration"></div>
+                </div>
+                <div class="about-text">
+                    <h3>Why patients choose us</h3>
+                    <p>
+                        At Gaytri Dental Hospital & Face Trauma Center, we are committed to providing
+                        exceptional dental care in a comfortable and modern environment. Our team of
+                        experienced professionals uses the latest technology and techniques to ensure
+                        the best outcomes for our patients.
+                    </p>
+                    <p>
+                        We specialize in comprehensive dental treatments, oral and maxillofacial surgery,
+                        and face trauma care. Our patient-centered approach ensures that every individual
+                        receives personalized attention and care tailored to their specific needs.
+                    </p>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-user-md"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Expert Doctors</h4>
+                                <p>Highly qualified and experienced dental professionals</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-microscope"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Advanced Technology</h4>
+                                <p>State-of-the-art equipment and modern techniques</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Patient Care</h4>
+                                <p>Compassionate and personalized treatment approach</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Safety First</h4>
+                                <p>Strict hygiene protocols and safety standards</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <header class="section-head-inline section-head-inline--dark">
+                <span class="section-badge">Treatments</span>
+                <h2 class="section-title">Everything your mouth &amp; face may need</h2>
+                <p class="section-lead">Pick a starting point—our team connects the rest of your care plan inside the hospital.</p>
+            </header>
+            <div class="services-grid services-bento">
+                <div class="service-card service-card--featured">
+                    <div class="service-icon">
+                        <i class="fas fa-tooth"></i>
+                    </div>
+                    <h3>General Dentistry</h3>
+                    <p>Routine check-ups, cleanings, fillings, and preventive care to maintain optimal oral health.</p>
+                    <div class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-smile-beam"></i>
+                    </div>
+                    <h3>Cosmetic Dentistry</h3>
+                    <p>Teeth whitening, veneers, and smile makeovers to enhance your confidence.</p>
+                    <div class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-x-ray"></i>
+                    </div>
+                    <h3>Oral Surgery</h3>
+                    <p>Wisdom teeth extraction, dental implants, and other surgical procedures.</p>
+                    <div class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bone"></i>
+                    </div>
+                    <h3>Maxillofacial Surgery</h3>
+                    <p>Advanced surgical treatment for jaw, face, and skull conditions.</p>
+                    <div class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="service-card service-card--accent">
+                    <div class="service-icon">
+                        <i class="fas fa-band-aid"></i>
+                    </div>
+                    <h3>Face Trauma Care</h3>
+                    <p>Emergency and specialized treatment for facial injuries and trauma.</p>
+                    <div class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3>Pediatric Dentistry</h3>
+                    <p>Gentle and specialized dental care for children of all ages.</p>
+                    <div class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-teeth"></i>
+                    </div>
+                    <h3>Orthodontics</h3>
+                    <p>Braces and aligners to straighten teeth and correct bite issues.</p>
+                    <div class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="service-card service-card--wide">
+                    <div class="service-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Root Canal Treatment</h3>
+                    <p>Pain-free endodontic treatment to save infected or damaged teeth.</p>
+                    <div class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors Section -->
+    <section class="doctors" id="doctors">
+        <div class="container">
+            <header class="section-head-inline">
+                <span class="section-badge">Our experts</span>
+                <h2 class="section-title">Meet your specialists</h2>
+                <p class="section-lead">Two lead clinicians—oral surgery &amp; face trauma alongside general and cosmetic dentistry.</p>
+            </header>
+            <div class="doctors-hero-photo">
+                <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1400&q=80"
+                    alt="Hospital corridor and clinical environment (stock photo—illustrative only)" width="1400"
+                    height="520" loading="lazy" decoding="async">
+                <div class="doctors-hero-photo__caption">
+                    <i class="fas fa-procedures"></i>
+                    <span>Hospital-grade environment for dental surgery &amp; facial trauma care</span>
+                </div>
+            </div>
+            <div class="doctors-grid">
+                <div class="doctor-card">
+                    <div class="doctor-banner doctor-banner--surgeon">
+                        <div class="doctor-banner-pattern"></div>
+                        <div class="doctor-avatar" aria-hidden="true">
+                            <span class="doctor-initials">MS</span>
+                        </div>
+                        <div class="doctor-banner-icon-wrap">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-doctor-cta" onclick="scrollToAppointment()">
+                            <i class="fas fa-calendar-check"></i> Book with Dr. Manish
+                        </button>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Manish Shukla</h3>
+                        <p class="doctor-credentials">BDS, MDS</p>
+                        <p class="doctor-specialization">Oral & Maxillofacial Surgeon</p>
+                        <p class="doctor-description">
+                            Dr. Manish Shukla is a highly skilled oral and maxillofacial surgeon with
+                            extensive experience in complex dental procedures and face trauma care.
+                            He is dedicated to providing exceptional care with precision and compassion.
+                        </p>
+                        <div class="doctor-details">
+                            <div class="detail-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>15+ Years Experience</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <span>3000+ Successful Cases</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="doctor-card">
+                    <div class="doctor-banner doctor-banner--dentist">
+                        <div class="doctor-banner-pattern"></div>
+                        <div class="doctor-avatar" aria-hidden="true">
+                            <span class="doctor-initials">PS</span>
+                        </div>
+                        <div class="doctor-banner-icon-wrap">
+                            <i class="fas fa-smile-beam"></i>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-doctor-cta" onclick="scrollToAppointment()">
+                            <i class="fas fa-calendar-check"></i> Book with Dr. Pratibha
+                        </button>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Pratibha Shukla</h3>
+                        <p class="doctor-credentials">BDS</p>
+                        <p class="doctor-specialization">General & Cosmetic Dentist</p>
+                        <p class="doctor-description">
+                            Dr. Pratibha Shukla specializes in general and cosmetic dentistry,
+                            offering comprehensive dental care with a gentle touch. She is committed
+                            to helping patients achieve healthy, beautiful smiles.
+                        </p>
+                        <div class="doctor-details">
+                            <div class="detail-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>12+ Years Experience</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <span>2500+ Happy Patients</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section class="appointment" id="appointment">
+        <div class="container">
+            <div class="appointment-content">
+                <div class="appointment-info">
+                    <span class="section-badge">Book Now</span>
+                    <h2>Schedule Your Appointment</h2>
+                    <p>
+                        Take the first step towards a healthier smile. Book your appointment with
+                        our experienced dental professionals today. We offer flexible scheduling
+                        to accommodate your busy lifestyle.
+                    </p>
+                    <div class="info-items">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Opening Hours</h4>
+                                <p>Mon - Sat: 9:00 AM - 8:00 PM</p>
+                                <p>Sunday: 10:00 AM - 2:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Call Us</h4>
+                                <p>+91 1234567890</p>
+                                <p>Emergency: +91 9876543210</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Visit Us</h4>
+                                <p>123 Medical District</p>
+                                <p>City, State - 123456</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="appointment-form-wrapper">
+                    <form class="appointment-form" id="appointmentForm">
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Preferred Date *</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Preferred Time *</label>
+                                <select id="time" name="time" required>
+                                    <option value="">Select Time</option>
+                                    <option value="09:00">09:00 AM</option>
+                                    <option value="10:00">10:00 AM</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="14:00">02:00 PM</option>
+                                    <option value="15:00">03:00 PM</option>
+                                    <option value="16:00">04:00 PM</option>
+                                    <option value="17:00">05:00 PM</option>
+                                    <option value="18:00">06:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="doctor">Select Doctor *</label>
+                            <select id="doctor" name="doctor" required>
+                                <option value="">Choose Doctor</option>
+                                <option value="dr-manish">Dr. Manish Shukla (BDS, MDS)</option>
+                                <option value="dr-pratibha">Dr. Pratibha Shukla (BDS)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Required *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select Service</option>
+                                <option value="general">General Dentistry</option>
+                                <option value="cosmetic">Cosmetic Dentistry</option>
+                                <option value="surgery">Oral Surgery</option>
+                                <option value="maxillofacial">Maxillofacial Surgery</option>
+                                <option value="trauma">Face Trauma Care</option>
+                                <option value="pediatric">Pediatric Dentistry</option>
+                                <option value="orthodontics">Orthodontics</option>
+                                <option value="root-canal">Root Canal Treatment</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Additional Message</label>
+                            <textarea id="message" name="message" rows="4"
+                                placeholder="Tell us about your dental concerns..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-calendar-check"></i> Book Appointment
+                        </button>
+                    </form>
+                    <div class="success-message" id="successMessage">
+                        <div class="success-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3>Appointment Request Sent!</h3>
+                        <p>Thank you for choosing Gaytri Dental Hospital. We'll contact you shortly to confirm your
+                            appointment.</p>
+                        <button class="btn btn-secondary" onclick="resetForm()">Book Another</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <header class="section-head-inline">
+                <span class="section-badge">Contact</span>
+                <h2 class="section-title">Visit, call, or write</h2>
+                <p class="section-lead">We respond quickly—especially for pain, swelling, or injury.</p>
+            </header>
+            <div class="contact-grid">
+                <div class="contact-info-section">
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h4>Email Us</h4>
+                            <p>info@gaytridental.com</p>
+                            <p>appointments@gaytridental.com</p>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <h4>Call Us</h4>
+                            <p>+91 1234567890</p>
+                            <p>Emergency: +91 9876543210</p>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                            <h4>Visit Us</h4>
+                            <p>123 Medical District,</p>
+                            <p>City, State - 123456</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p>Map Location</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-mark logo-mark--footer" aria-hidden="true">
+                            <i class="fas fa-tooth"></i>
+                        </div>
+                        <div class="footer-logo-text">
+                            <div>Gaytri Dental</div>
+                            <div>Hospital & Face Trauma Center</div>
+                        </div>
+                    </div>
+                    <p>Your trusted partner in dental health and face trauma care. We are committed to excellence in
+                        patient care.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#doctors">Our Doctors</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">General Dentistry</a></li>
+                        <li><a href="#services">Cosmetic Dentistry</a></li>
+                        <li><a href="#services">Oral Surgery</a></li>
+                        <li><a href="#services">Face Trauma Care</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +91 1234567890</li>
+                        <li><i class="fas fa-envelope"></i> info@gaytridental.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Medical District, City</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sat: 9AM - 8PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Gaytri Dental Hospital & Face Trauma Center. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
