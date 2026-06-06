@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaytri Dental Hospital & Face Trauma Center - Expert Dental Care</title>
+    <meta name="description"
+        content="Gaytri Dental Hospital & Face Trauma Center provides expert dental care, oral surgery, and face trauma treatment. Book an appointment with Dr. Manish Shukla and Dr. Pratibha Shukla today.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <i class="fas fa-tooth"></i>
+                    <div class="logo-text">
+                        <span class="logo-title">Gaytri Dental</span>
+                        <span class="logo-subtitle">Hospital & Face Trauma Center</span>
+                    </div>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#doctors" class="nav-link">Our Doctors</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="btn btn-primary" onclick="scrollToAppointment()">
+                    <i class="fas fa-calendar-check"></i> Book Appointment
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-award"></i>
+                    <span>Trusted Dental Care Excellence</span>
+                </div>
+                <h1 class="hero-title">
+                    Your Smile Deserves<br>
+                    <span class="gradient-text">Expert Care</span>
+                </h1>
+                <p class="hero-description">
+                    Gaytri Dental Hospital & Face Trauma Center offers comprehensive dental services
+                    with state-of-the-art technology and compassionate care from experienced professionals.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary btn-lg" onclick="scrollToAppointment()">
+                        <i class="fas fa-calendar-plus"></i> Schedule Appointment
+                    </button>
+                    <button class="btn btn-secondary btn-lg" onclick="scrollToServices()">
+                        <i class="fas fa-info-circle"></i> Our Services
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number">5000+</div>
+                        <div class="stat-label">Happy Patients</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Satisfaction Rate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">About Us</span>
+                <h2 class="section-title">Welcome to Gaytri Dental Hospital</h2>
+                <p class="section-description">
+                    Your trusted partner in dental health and face trauma care
+                </p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <img src="C:/Users/Saurabh/.gemini/antigravity/brain/6ba92722-882a-4b44-9339-3d8b1e03eb89/hospital_hero_1765038479269.png"
+                            alt="Gaytri Dental Hospital">
+                        <div class="image-decoration"></div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Leading Dental Care Excellence</h3>
+                    <p>
+                        At Gaytri Dental Hospital & Face Trauma Center, we are committed to providing
+                        exceptional dental care in a comfortable and modern environment. Our team of
+                        experienced professionals uses the latest technology and techniques to ensure
+                        the best outcomes for our patients.
+                    </p>
+                    <p>
+                        We specialize in comprehensive dental treatments, oral and maxillofacial surgery,
+                        and face trauma care. Our patient-centered approach ensures that every individual
+                        receives personalized attention and care tailored to their specific needs.
+                    </p>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-user-md"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Expert Doctors</h4>
+                                <p>Highly qualified and experienced dental professionals</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-microscope"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Advanced Technology</h4>
+                                <p>State-of-the-art equipment and modern techniques</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Patient Care</h4>
+                                <p>Compassionate and personalized treatment approach</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Safety First</h4>
+                                <p>Strict hygiene protocols and safety standards</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Our Services</span>
+                <h2 class="section-title">Comprehensive Dental Solutions</h2>
+                <p class="section-description">
+                    We offer a wide range of dental services to meet all your oral health needs
+                </p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tooth"></i>
+                    </div>
+                    <h3>General Dentistry</h3>
+                    <p>Routine check-ups, cleanings, fillings, and preventive care to maintain optimal oral health.</p>
+                    <div class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-smile-beam"></i>
+                    </div>
+                    <h3>Cosmetic Dentistry</h3>
+                    <p>Teeth whitening, veneers, and smile makeovers to enhance your confidence.</p>
+                    <div class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-x-ray"></i>
+                    </div>
+                    <h3>Oral Surgery</h3>
+                    <p>Wisdom teeth extraction, dental implants, and other surgical procedures.</p>
+                    <div class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bone"></i>
+                    </div>
+                    <h3>Maxillofacial Surgery</h3>
+                    <p>Advanced surgical treatment for jaw, face, and skull conditions.</p>
+                    <div class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-band-aid"></i>
+                    </div>
+                    <h3>Face Trauma Care</h3>
+                    <p>Emergency and specialized treatment for facial injuries and trauma.</p>
+                    <div class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3>Pediatric Dentistry</h3>
+                    <p>Gentle and specialized dental care for children of all ages.</p>
+                    <div class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-teeth"></i>
+                    </div>
+                    <h3>Orthodontics</h3>
+                    <p>Braces and aligners to straighten teeth and correct bite issues.</p>
+                    <div class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Root Canal Treatment</h3>
+                    <p>Pain-free endodontic treatment to save infected or damaged teeth.</p>
+                    <div class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors Section -->
+    <section class="doctors" id="doctors">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Our Experts</span>
+                <h2 class="section-title">Meet Our Experienced Doctors</h2>
+                <p class="section-description">
+                    Dedicated professionals committed to your dental health
+                </p>
+            </div>
+            <div class="doctors-grid">
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="C:/Users/Saurabh/.gemini/antigravity/brain/6ba92722-882a-4b44-9339-3d8b1e03eb89/dr_manish_shukla_1765038434498.png"
+                            alt="Dr. Manish Shukla">
+                        <div class="doctor-overlay">
+                            <button class="btn btn-primary" onclick="scrollToAppointment()">Book Appointment</button>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Manish Shukla</h3>
+                        <p class="doctor-credentials">BDS, MDS</p>
+                        <p class="doctor-specialization">Oral & Maxillofacial Surgeon</p>
+                        <p class="doctor-description">
+                            Dr. Manish Shukla is a highly skilled oral and maxillofacial surgeon with
+                            extensive experience in complex dental procedures and face trauma care.
+                            He is dedicated to providing exceptional care with precision and compassion.
+                        </p>
+                        <div class="doctor-details">
+                            <div class="detail-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>15+ Years Experience</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <span>3000+ Successful Cases</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="C:/Users/Saurabh/.gemini/antigravity/brain/6ba92722-882a-4b44-9339-3d8b1e03eb89/dr_pratibha_shukla_1765038454526.png"
+                            alt="Dr. Pratibha Shukla">
+                        <div class="doctor-overlay">
+                            <button class="btn btn-primary" onclick="scrollToAppointment()">Book Appointment</button>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Pratibha Shukla</h3>
+                        <p class="doctor-credentials">BDS</p>
+                        <p class="doctor-specialization">General & Cosmetic Dentist</p>
+                        <p class="doctor-description">
+                            Dr. Pratibha Shukla specializes in general and cosmetic dentistry,
+                            offering comprehensive dental care with a gentle touch. She is committed
+                            to helping patients achieve healthy, beautiful smiles.
+                        </p>
+                        <div class="doctor-details">
+                            <div class="detail-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>12+ Years Experience</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <span>2500+ Happy Patients</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section class="appointment" id="appointment">
+        <div class="container">
+            <div class="appointment-content">
+                <div class="appointment-info">
+                    <span class="section-badge">Book Now</span>
+                    <h2>Schedule Your Appointment</h2>
+                    <p>
+                        Take the first step towards a healthier smile. Book your appointment with
+                        our experienced dental professionals today. We offer flexible scheduling
+                        to accommodate your busy lifestyle.
+                    </p>
+                    <div class="info-items">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Opening Hours</h4>
+                                <p>Mon - Sat: 9:00 AM - 8:00 PM</p>
+                                <p>Sunday: 10:00 AM - 2:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Call Us</h4>
+                                <p>+91 1234567890</p>
+                                <p>Emergency: +91 9876543210</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Visit Us</h4>
+                                <p>123 Medical District</p>
+                                <p>City, State - 123456</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="appointment-form-wrapper">
+                    <form class="appointment-form" id="appointmentForm">
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Preferred Date *</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Preferred Time *</label>
+                                <select id="time" name="time" required>
+                                    <option value="">Select Time</option>
+                                    <option value="09:00">09:00 AM</option>
+                                    <option value="10:00">10:00 AM</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="14:00">02:00 PM</option>
+                                    <option value="15:00">03:00 PM</option>
+                                    <option value="16:00">04:00 PM</option>
+                                    <option value="17:00">05:00 PM</option>
+                                    <option value="18:00">06:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="doctor">Select Doctor *</label>
+                            <select id="doctor" name="doctor" required>
+                                <option value="">Choose Doctor</option>
+                                <option value="dr-manish">Dr. Manish Shukla (BDS, MDS)</option>
+                                <option value="dr-pratibha">Dr. Pratibha Shukla (BDS)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Required *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select Service</option>
+                                <option value="general">General Dentistry</option>
+                                <option value="cosmetic">Cosmetic Dentistry</option>
+                                <option value="surgery">Oral Surgery</option>
+                                <option value="maxillofacial">Maxillofacial Surgery</option>
+                                <option value="trauma">Face Trauma Care</option>
+                                <option value="pediatric">Pediatric Dentistry</option>
+                                <option value="orthodontics">Orthodontics</option>
+                                <option value="root-canal">Root Canal Treatment</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Additional Message</label>
+                            <textarea id="message" name="message" rows="4"
+                                placeholder="Tell us about your dental concerns..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-calendar-check"></i> Book Appointment
+                        </button>
+                    </form>
+                    <div class="success-message" id="successMessage">
+                        <div class="success-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3>Appointment Request Sent!</h3>
+                        <p>Thank you for choosing Gaytri Dental Hospital. We'll contact you shortly to confirm your
+                            appointment.</p>
+                        <button class="btn btn-secondary" onclick="resetForm()">Book Another</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info-section">
+                    <h2>Get In Touch</h2>
+                    <p>Have questions? We're here to help. Reach out to us through any of the following channels.</p>
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h4>Email Us</h4>
+                            <p>info@gaytridental.com</p>
+                            <p>appointments@gaytridental.com</p>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <h4>Call Us</h4>
+                            <p>+91 1234567890</p>
+                            <p>Emergency: +91 9876543210</p>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                            <h4>Visit Us</h4>
+                            <p>123 Medical District,</p>
+                            <p>City, State - 123456</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+
+                        <!-- Script -->
+                        <script src="script.js"></script>
+</body>
+
+</html>
