@@ -122,7 +122,7 @@
                 "@type": "Physician",
                 "name": "Dr. Manish Shukla",
                 "medicalSpecialty": "OralAndMaxillofacialSurgery",
-                "description": "BDS, MDS — Oral & Maxillofacial Surgeon"
+                "description": "BDS, MDS — Oral & Maxillofacial Surgeon, Senior Dental Surgeon, Dental Implantologist"
             },
             {
                 "@type": "Physician",
@@ -305,10 +305,10 @@
                 <p class="section-lead">Dental excellence and face-trauma expertise in one place—less running around, more healing.</p>
             </header>
             <div class="about-content">
-                <div class="about-visual" aria-hidden="true">
-                    <div class="about-visual-inner">
-                        <div class="about-visual-glow"></div>
-                        <i class="fas fa-tooth about-visual-icon"></i>
+                <div class="about-visual">
+                    <div class="about-visual-inner about-visual-inner--photo">
+                        <img class="about-visual-photo" src="images/DrManishShukla.jpeg"
+                            alt="Dr. Manish Shukla, Oral &amp; Maxillofacial Surgeon at Gayatri Dental Hospital">
                         <div class="about-visual-badges">
                             <span class="about-pill"><i class="fas fa-certificate"></i> Certified care</span>
                             <span class="about-pill"><i class="fas fa-shield-virus"></i> Sterile &amp; safe</span>
@@ -364,6 +364,78 @@
                             <div class="feature-content">
                                 <h4>Safety First</h4>
                                 <p>Strict hygiene protocols and safety standards</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-truck-medical"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Emergency &amp; Trauma Care</h4>
+                                <p>Trauma-ready team for facial injuries and urgent dental pain</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-hand-holding-heart"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Painless Procedures</h4>
+                                <p>Gentle techniques and modern anaesthesia for a comfortable visit</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-x-ray"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Advanced Diagnostics</h4>
+                                <p>Digital X-rays and imaging for accurate, faster treatment</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-indian-rupee-sign"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Transparent Pricing</h4>
+                                <p>Clear, fair costs and treatment plans that fit your budget</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-bone"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Oral &amp; Maxillofacial Expertise</h4>
+                                <p>Complex jaw, facial, and dental surgery led by MDS-qualified specialists</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-hospital"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Complete In-House Care</h4>
+                                <p>Preventive dentistry through surgery and trauma—one coordinated team</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Clinical Excellence</h4>
+                                <p>Evidence-based treatment plans with clear diagnosis and follow-up</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Trusted Local Hospital</h4>
+                                <p>15+ years of combined experience serving Bahraich and nearby communities</p>
                             </div>
                         </div>
                     </div>
@@ -485,11 +557,12 @@
                 <div class="doctor-card">
                     <div class="doctor-banner doctor-banner--surgeon">
                         <div class="doctor-banner-pattern"></div>
-                        <div class="doctor-avatar" aria-hidden="true">
-                            <span class="doctor-initials">MS</span>
-                        </div>
-                        <div class="doctor-banner-icon-wrap">
-                            <i class="fas fa-user-md"></i>
+                        <div class="doctor-portrait">
+                            <div class="doctor-avatar doctor-avatar--photo">
+                                <img src="images/DrManishShukla.jpeg"
+                                    alt="Dr. Manish Shukla, Oral &amp; Maxillofacial Surgeon" loading="lazy">
+                            </div>
+                            <span class="doctor-badge"><i class="fas fa-user-md"></i></span>
                         </div>
                         <button type="button" class="btn btn-primary btn-doctor-cta" onclick="scrollToAppointment()">
                             <i class="fas fa-calendar-check"></i> Book with Dr. Manish
@@ -498,7 +571,11 @@
                     <div class="doctor-info">
                         <h3>Dr. Manish Shukla</h3>
                         <p class="doctor-credentials">BDS, MDS</p>
-                        <p class="doctor-specialization">Oral & Maxillofacial Surgeon</p>
+                        <ul class="doctor-specializations">
+                            <li>Oral &amp; Maxillofacial Surgeon</li>
+                            <li>Senior Dental Surgeon</li>
+                            <li>Dental Implantologist</li>
+                        </ul>
                         <p class="doctor-description">
                             Dr. Manish Shukla is a highly skilled oral and maxillofacial surgeon with
                             extensive experience in complex dental procedures and face trauma care.
@@ -519,11 +596,12 @@
                 <div class="doctor-card">
                     <div class="doctor-banner doctor-banner--dentist">
                         <div class="doctor-banner-pattern"></div>
-                        <div class="doctor-avatar" aria-hidden="true">
-                            <span class="doctor-initials">PS</span>
-                        </div>
-                        <div class="doctor-banner-icon-wrap">
-                            <i class="fas fa-smile-beam"></i>
+                        <div class="doctor-portrait">
+                            <div class="doctor-avatar doctor-avatar--photo">
+                                <img src="images/DrPratibhaShukla.jpeg"
+                                    alt="Dr. Pratibha Shukla, General &amp; Cosmetic Dentist" loading="lazy">
+                            </div>
+                            <span class="doctor-badge"><i class="fas fa-smile-beam"></i></span>
                         </div>
                         <button type="button" class="btn btn-primary btn-doctor-cta" onclick="scrollToAppointment()">
                             <i class="fas fa-calendar-check"></i> Book with Dr. Pratibha
